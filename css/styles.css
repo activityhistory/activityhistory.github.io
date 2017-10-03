@@ -1,6 +1,7 @@
-/* ============================== */
-/* ! Layout for desktop version   */
-/* ============================== */
+body {
+    max-width: 950px;
+    margin: auto;
+}
 
 a {
 	text-decoration: none;
@@ -12,29 +13,20 @@ a:link, a:visited, a.current {
 
 a:hover, a:active {
 	color: #999;
+	text-decoration: none;
 }
 
-a.nav:link, a.nav:visited {
-	color: #4c4c4c;
+p.alt{
+    padding-top: 3px;
+    color: #999;
 }
 
-a.nav:hover, a.nav:active {
-	color: #47b;
-}
-
-body {
-	background: #fff;
-	width: 800px;
-	margin: auto;
-	padding-top: 20px;
-	font-family: helvetica neue, helvetica, arial, verdana, sans-serif;
-	font-size: 11pt;
-	text-align: left;
-	color: #000;
+.cond-right{
+	text-align: right;
 }
 
 h1 {
-	font-size:2em;
+	font-size:1.7em;
 	font-weight:500;
 	margin-top:0px;
 	color:#4c4c4c;
@@ -43,7 +35,7 @@ h1 {
 h2 {
 	font-size:1.2em;
 	font-weight: 500;
-	margin: 25 0 5px;
+	margin: 1em 0 0.5em;
 	color:#999;
 }
 
@@ -51,100 +43,22 @@ h3{
 	font-size:1em;
 	font-weight: 500;
 	color:#000;
-	margin: 0px;
-}
-
-h4{
-	font-size: 0.9em;
-	line-height: 110%;
-	font-weight: normal;
-	margin: 0px;
-	color: #999;
-	text-align:right;
-}
-
-p {
-	line-height: 150%;
-	margin: 0px 0px 15px;
-	padding:0px;
-}
-
-ol{
-	line-height: 150%;
-}
-
-ul{
-	line-height: 150%;
-}
-
-ul.nav {
-	list-style-type: none;
-	margin: 0px;
-	padding-left: 0px;
-	overflow: hidden;
-	font-size: 2em;
-}
-
-li.nav {
-	line-height: 140%;
-	float:left;
-	padding-right:25px;
-}
-
-#header {
-	margin: 0px 0px 20px;
-	padding: 5px 5px 5px;
-	border-bottom-style: solid;
-	border-width: 1px;
-	border-color: #e5e3e1;
-	background-color: #fafaf8;
-}
-
-#navigation {
-	width: 800px;
-}
-
-#footer {
-	text-align: right;
-	margin: 25px 0px;
-	clear: both;
-	font-size: 0.75em;
-}
-
-.row{
-	position: relative;
-    width: 100%;
-
-    overflow: hidden;
-	margin-bottom: 25px;
-}
-
-.short_row{
-	position: relative;
-    width: 100%;
-
-    overflow: hidden;
-	margin-bottom: 10px;
-}
-
-.left_col{
-	width: 175px;
-
-	margin-right: 25px;
-	float: left;
-}
-
-.right_col{
-	position: relative;
-  	width: 600px;
-  	float: right;
+	margin: 0.25em 0 0.25em;
 }
 
 .profile{
-	max-height: 138px;
+	max-width: 100%;
 }
 
-.img-wrapper{
-	float: left;
-	margin-right: 10px;
+
+@media (max-width: 575px) {
+
+    .cond-right{
+        text-align: left;
+    }
+
+	.profile{
+		max-width: 200px;
+	}
+
 }
